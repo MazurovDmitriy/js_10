@@ -1,0 +1,133 @@
+
+* { margin: 0; padding: 0; }
+body {
+	font: 1em/1.4em Arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 620px;
+    padding: 20px 20px 40px 20px;
+    margin: auto;
+}
+.custom-class2 {
+	width: 200px;
+}
+h2 {
+	margin-bottom: 20px;
+}
+.niceCheck {
+height: 17px;
+padding-left: 20px;
+display: inline-block;
+cursor: pointer;
+background: url(../img/checkbox.png) no-repeat 0 0px;
+}
+.niceCheck input {
+display: none;
+}
+
+/* CSS checkbox */
+.css-checkbox input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.css-checkbox label {
+	cursor: pointer;
+}
+.css-checkbox label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox-2.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+.css-checkbox input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+.css-checkbox label:hover:after {
+background-position: 0 -34px;
+}
+.css-checkbox input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}
+
+/*  jQuery menu  */
+.jquery-menu {
+	background: #6496c8;
+}
+.jquery-menu li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 0px;
+	position: relative;
+}
+.jquery-menu li a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+}
+.jquery-menu li a:hover{
+	text-decoration: none;
+	color: #000;
+}
+.jquery-menu li.parent ul{
+	display: none;
+	position: absolute;
+	top: 80%;
+	left: 0;
+	width: 150px;
+	padding: 10px;
+	z-index: 10;
+	background-color: #6496c8
+}
+.jquery-menu li.parent ul ul{
+	top: 0%;
+	left: 100%;
+}
+.jquery-menu li.parent ul li{
+	list-style: none;
+	display: block;
+}
+.jquery-menu li.parent ul li a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 0 0 8px 0;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #446587;
+}
+.jquery-menu li.parent ul li a:hover{
+	text-decoration: none;
+	color: #000;
+}
+.jquery-menu li.parent ul li:last-child a{
+	padding: 0;
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.jquery-menu li.parent:after{
+	position: absolute;
+	top: 18px;
+	right: 5px;
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid #fff;
+}
+.jquery-menu ul li.parent:after{
+	position: absolute;
+	top: 8px;
+	right: 0px;
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 4px solid transparent;
+	border-left: 6px solid #fff;
+	border-bottom: 4px solid transparent;
+}
